@@ -6,7 +6,7 @@ import Image from 'next/image'
 import ProjectGrid from '@/components/ProjectGrid'
 import ImageGallery from '@/components/ImageGallery'
 import { Project } from '@/lib/projects'
-import { useCategory } from './layout'
+import { useCategory } from './context'
 
 export default function Portfolio() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null)

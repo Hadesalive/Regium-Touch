@@ -195,7 +195,7 @@ export default function Home() {
               What Clients Say
             </h2>
             <p className="text-lg text-gray-500 font-light">
-              Real feedback from those we've worked with
+              Real feedback from those we&apos;ve worked with
             </p>
           </div>
 
@@ -223,7 +223,7 @@ export default function Home() {
                   <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 9.464-10.681v3.459c-2.15.241-3.814 1.451-4.996 3.339v2.293h5.532v7.391h-9.46zm-14.017 0v-7.391c0-5.704 3.748-9.57 9.483-10.681v3.459c-2.152.241-3.817 1.451-5 3.339v2.293h5.532v7.391h-9.046z"/>
                 </svg>
                 <blockquote className="text-2xl md:text-3xl text-gray-800 leading-relaxed font-light max-w-4xl">
-                  "Regium Touch is giving hope to anyone who has a story to tell that that story will be told in the best way possible."
+                  &ldquo;Regium Touch is giving hope to anyone who has a story to tell that that story will be told in the best way possible.&rdquo;
                 </blockquote>
               </div>
               
@@ -380,7 +380,7 @@ export default function Home() {
               Get In Touch
             </h2>
             <p className="text-xl text-gray-500 font-light">
-              Let's discuss your next project
+              Let&apos;s discuss your next project
             </p>
           </div>
 
@@ -483,7 +483,7 @@ export default function Home() {
                   Ready to bring your vision to life?
                 </h3>
                 <p className="text-white/90 text-center leading-relaxed mb-8">
-                  Whether it's graphic design, video production, or web development, we're here to help turn your ideas into reality.
+                  Whether it&apos;s graphic design, video production, or web development, we&apos;re here to help turn your ideas into reality.
                 </p>
                 <div className="space-y-3 w-full">
                   <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-xl px-4 py-3">

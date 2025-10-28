@@ -1,18 +1,7 @@
 'use client'
 
-import { useState, createContext, useContext } from 'react'
-
-type CategoryContextType = {
-  activeCategory: string
-  setActiveCategory: (category: string) => void
-}
-
-const CategoryContext = createContext<CategoryContextType>({
-  activeCategory: 'All',
-  setActiveCategory: () => {}
-})
-
-export const useCategory = () => useContext(CategoryContext)
+import { useState } from 'react'
+import { CategoryContext } from './context'
 
 export default function PortfolioLayout({
   children,

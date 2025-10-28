@@ -37,7 +37,7 @@ export default function VideosPage() {
                 In Motion
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Crafting compelling video content that brings your brand's stories to life and 
+                Crafting compelling video content that brings your brand&apos;s stories to life and 
                 captivates your audience.
               </p>
             </motion.div>
