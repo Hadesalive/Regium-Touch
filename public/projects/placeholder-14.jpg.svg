@@ -1,0 +1,7 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#1a1a1a"/>
+  <rect x="200" y="120" width="400" height="360" rx="10" fill="#3b82f6" opacity="0.3"/>
+  <text x="400" y="330" font-family="Arial" font-size="44" fill="#3b82f6" text-anchor="middle">CORPORATE</text>
+  <text x="400" y="400" font-family="Arial" font-size="24" fill="#666" text-anchor="middle">Corporate Website</text>
+</svg>
+

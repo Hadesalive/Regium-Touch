@@ -1,0 +1,7 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#1a1a1a"/>
+  <rect x="150" y="100" width="500" height="400" rx="15" fill="#9333ea" opacity="0.3"/>
+  <text x="400" y="320" font-family="Arial" font-size="48" fill="#9333ea" text-anchor="middle">WEBSITE</text>
+  <text x="400" y="400" font-family="Arial" font-size="24" fill="#666" text-anchor="middle">E-commerce Platform</text>
+</svg>
+
