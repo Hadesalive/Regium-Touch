@@ -129,9 +129,11 @@ export default function Home() {
                           className="flex items-center gap-1.5 px-2.5 py-1 bg-white/80 backdrop-blur-sm border border-gray-200/50 rounded-lg hover:border-accent-purple/30 hover:bg-white transition-all group/tech"
                         >
                           {tech.svgIcon ? (
-                            <img 
+                            <Image 
                               src={tech.svgIcon} 
                               alt={tech.name} 
+                              width={14}
+                              height={14}
                               className="w-3.5 h-3.5"
                               style={{ 
                                 filter: tech.name === 'Adobe Illustrator' ? 'brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%)' :
@@ -267,13 +269,24 @@ export default function Home() {
               </h2>
               <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
                 <p>
-                  Regium Touch is a creative agency specializing in bringing your stories to life through exceptional design, video production, and digital experiences.
+                  Regium Touch is a creative digital marketing agency based in Freetown, Sierra Leone, 
+                  dedicated to helping brands grow and empowering the next generation of digital marketers.
                 </p>
                 <p>
-                  We give hope to anyone who has a story to tell, ensuring that story is told in the best way possible. From branding and graphics to web design and video production, we craft compelling visual narratives that connect with audiences and drive results.
+                  We provide a full range of digital services — from brand identity design, web development, 
+                  and content creation to social media management, paid advertising, and digital strategy — 
+                  helping startups and small businesses connect meaningfully with their audiences and achieve 
+                  measurable results.
                 </p>
                 <p>
-                  Our team combines creativity with technical expertise to deliver solutions that not only look stunning but also serve your business goals.
+                  Beyond client work, we are passionate about training and equipping aspiring digital marketers 
+                  through workshops, bootcamps, and short courses that blend creativity, strategy, and hands-on 
+                  learning. Our mission is to raise a new wave of skilled professionals who can transform 
+                  Africa&apos;s digital economy.
+                </p>
+                <p className="font-medium text-accent-purple">
+                  At Regium Touch, creativity meets purpose. We don&apos;t just create campaigns; we build 
+                  stories that inspire, educate, and drive impact.
                 </p>
               </div>
             </div>

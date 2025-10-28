@@ -18,6 +18,7 @@ export interface Project {
   techStack?: TechStack[]
   gradient?: string
   demoUrl?: string
+  autoplay?: boolean
 }
 
 // BRANDING - Logo Designs
@@ -121,16 +122,6 @@ const graphicDesignProjects: Project[] = [
       { name: 'InDesign', svgIcon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/adobeindesign.svg', color: 'from-pink-500/20 to-purple-500/20' }
     ],
     gradient: 'from-pink-500 via-purple-500 to-indigo-500'
-  },
-  {
-    id: 'graphic-2',
-    title: 'Tax Perception Report',
-    category: 'Graphic Design',
-    thumbnail: '/projects/regium touch/reports/FINAL TAX PERCEPTION REPORT.pdf',
-    slug: '/portfolio/graphics',
-    description: 'Professional report design with comprehensive data visualization and analysis.',
-    pdfs: ['/projects/regium touch/reports/FINAL TAX PERCEPTION REPORT.pdf'],
-    gradient: 'from-blue-500 via-indigo-500 to-purple-500'
   }
 ]
 
@@ -144,6 +135,7 @@ const videoProjects: Project[] = [
     slug: '/portfolio/videos',
     description: 'Professional video production highlighting social impact initiatives and community engagement.',
     video: '/projects/regium touch/video/orange social venture prize project.mp4',
+    autoplay: true,
     techStack: [
       { name: 'Premiere Pro', svgIcon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/adobepremierepro.svg', color: 'from-purple-500/20 to-purple-600/20' },
       { name: 'After Effects', svgIcon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/adobeaftereffects.svg', color: 'from-indigo-500/20 to-purple-500/20' }
@@ -176,37 +168,37 @@ const trainingImages = [
   '/projects/regium touch/trainings/1753530291413.jpeg.jpg'
 ]
 
-const photographyProjects: Project[] = [
+const digitalMarketingTrainingProjects: Project[] = [
   {
-    id: 'photo-1',
-    title: 'Training Documentation',
-    category: 'Photography',
+    id: 'training-1',
+    title: 'Digital Marketing Training Programs',
+    category: 'Digital Marketing Training',
     thumbnail: trainingImages[0],
-    slug: '/portfolio/photos',
-    description: 'Professional photography documenting training sessions and workshops.',
+    slug: '/portfolio/training',
+    description: 'Comprehensive digital marketing training programs and workshops designed to equip aspiring marketers with practical skills and industry knowledge.',
     images: trainingImages,
     techStack: [
-      { name: 'Lightroom', svgIcon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/adobelightroomclassic.svg', color: 'from-blue-500/20 to-indigo-500/20' },
-      { name: 'Photoshop', svgIcon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/adobephotoshop.svg', color: 'from-blue-500/20 to-cyan-500/20' }
+      { name: 'Innovation SL', svgIcon: '', color: 'from-blue-500/20 to-indigo-500/20' },
+      { name: 'Limkokwing University', svgIcon: '', color: 'from-purple-500/20 to-pink-500/20' },
+      { name: 'Aurora Foundation', svgIcon: '', color: 'from-emerald-500/20 to-teal-500/20' },
+      { name: 'Orange Sierra Leone', svgIcon: '', color: 'from-orange-500/20 to-red-500/20' }
     ],
     gradient: 'from-emerald-500 via-teal-500 to-cyan-500'
   }
 ]
 
-// WEB DESIGN - Websites (Grouped into one card)
+// WEB DESIGN - Individual Websites
 const websiteProjects: Project[] = [
   {
-    id: 'web-all',
-    title: 'Web Development Portfolio',
+    id: 'ups-system-rescue',
+    title: 'UPS System Rescue',
     category: 'Web Design',
     thumbnail: '/projects/regium touch/website/ups-system-rescue.vercel.app_ (1).png',
-    slug: '/portfolio/websites',
-    description: 'A collection of modern, responsive websites including e-commerce platforms, business services, job portals, and school websites built with cutting-edge technologies.',
+    slug: '/portfolio/websites/ups-system-rescue',
+    description: 'Professional UPS system repair and maintenance service website with modern design and responsive layout.',
+    demoUrl: 'https://ups-system-rescue.vercel.app/',
     images: [
-      '/projects/regium touch/website/ups-system-rescue.vercel.app_ (1).png',
-      '/projects/regium touch/website/www.coolcarautorepairgarage.com_(Hd Screenshot).png',
-      '/projects/regium touch/website/job-konect-ebon.vercel.app_(Hd Screenshot).png',
-      '/projects/regium touch/website/wamagriso.vercel.app_(Hd Screenshot).png'
+      '/projects/regium touch/website/ups-system-rescue.vercel.app_ (1).png'
     ],
     techStack: [
       { name: 'Next.js', svgIcon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/nextdotjs.svg', color: 'from-gray-900 to-black' },
@@ -215,6 +207,65 @@ const websiteProjects: Project[] = [
       { name: 'Tailwind CSS', svgIcon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/tailwindcss.svg', color: 'from-cyan-400 to-blue-500' }
     ],
     gradient: 'from-blue-500 via-purple-500 to-pink-500'
+  },
+  {
+    id: 'cool-car-autorepair',
+    title: 'Cool Car Autorepair',
+    category: 'Web Design',
+    thumbnail: '/projects/regium touch/website/www.coolcarautorepairgarage.com_(Hd Screenshot).png',
+    slug: '/portfolio/websites/cool-car-autorepair',
+    description: 'Automotive repair service website featuring modern design, service listings, and customer testimonials.',
+    demoUrl: 'https://www.coolcarautorepairgarage.com/',
+    images: [
+      '/projects/regium touch/website/www.coolcarautorepairgarage.com_(Hd Screenshot).png'
+    ],
+    techStack: [
+      { name: 'Next.js', svgIcon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/nextdotjs.svg', color: 'from-gray-900 to-black' },
+      { name: 'React', svgIcon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/react.svg', color: 'from-cyan-400 to-cyan-500' },
+      { name: 'TypeScript', svgIcon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/typescript.svg', color: 'from-blue-500 to-blue-600' },
+      { name: 'Tailwind CSS', svgIcon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/tailwindcss.svg', color: 'from-cyan-400 to-blue-500' }
+    ],
+    gradient: 'from-emerald-500 via-teal-500 to-cyan-500'
+  },
+  {
+    id: 'job-konect',
+    title: 'Job Konect',
+    category: 'Web Design',
+    thumbnail: '/projects/regium touch/website/job-konect-ebon.vercel.app_(Hd Screenshot).png',
+    slug: '/portfolio/websites/job-konect',
+    description: 'Job portal platform connecting employers with job seekers. Features user authentication, job listings, and application management.',
+    demoUrl: 'https://job-konect-ebon.vercel.app/',
+    images: [
+      '/projects/regium touch/website/job-konect-ebon.vercel.app_(Hd Screenshot).png'
+    ],
+    techStack: [
+      { name: 'Next.js', svgIcon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/nextdotjs.svg', color: 'from-gray-900 to-black' },
+      { name: 'React', svgIcon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/react.svg', color: 'from-cyan-400 to-cyan-500' },
+      { name: 'TypeScript', svgIcon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/typescript.svg', color: 'from-blue-500 to-blue-600' },
+      { name: 'Tailwind CSS', svgIcon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/tailwindcss.svg', color: 'from-cyan-400 to-blue-500' },
+      { name: 'MongoDB', svgIcon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/mongodb.svg', color: 'from-green-500 to-emerald-500' }
+    ],
+    gradient: 'from-purple-500 via-blue-500 to-cyan-500'
+  },
+  {
+    id: 'wamagriso-school',
+    title: 'Wamagriso School',
+    category: 'Web Design',
+    thumbnail: '/projects/regium touch/website/wamagriso.vercel.app_(Hd Screenshot).png',
+    slug: '/portfolio/websites/wamagriso-school',
+    description: 'School website with CMS integration, student portal, and administrative features. Built with modern web technologies.',
+    demoUrl: 'https://wamagriso.vercel.app/',
+    images: [
+      '/projects/regium touch/website/wamagriso.vercel.app_(Hd Screenshot).png'
+    ],
+    techStack: [
+      { name: 'Next.js', svgIcon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/nextdotjs.svg', color: 'from-gray-900 to-black' },
+      { name: 'React', svgIcon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/react.svg', color: 'from-cyan-400 to-cyan-500' },
+      { name: 'TypeScript', svgIcon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/typescript.svg', color: 'from-blue-500 to-blue-600' },
+      { name: 'Tailwind CSS', svgIcon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/tailwindcss.svg', color: 'from-cyan-400 to-blue-500' },
+      { name: 'MongoDB', svgIcon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v9/icons/mongodb.svg', color: 'from-green-500 to-emerald-500' }
+    ],
+    gradient: 'from-green-500 via-emerald-500 to-teal-500'
   }
 ]
 
@@ -223,7 +274,7 @@ export const projects: Project[] = [
   ...brandingProjects,
   ...graphicDesignProjects,
   ...videoProjects,
-  ...photographyProjects,
+  ...digitalMarketingTrainingProjects,
   ...websiteProjects
 ]
 
@@ -232,6 +283,7 @@ export const featuredProjects: Project[] = [
   brandingProjects[0],
   graphicDesignProjects[0],
   videoProjects[0],
-  photographyProjects[0],
-  websiteProjects[0]
+  digitalMarketingTrainingProjects[0],
+  websiteProjects[0], // UPS System Rescue
+  websiteProjects[1]  // Cool Car Autorepair
 ]

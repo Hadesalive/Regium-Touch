@@ -94,7 +94,7 @@ export default function Header() {
           {/* CTA Button - Right */}
           <div className="hidden md:block z-10">
             <a
-              href="tel:+23279279027"
+              href="/#contact"
               className="text-sm font-semibold px-6 py-2.5 bg-accent-purple hover:bg-accent-purple/90 text-white rounded-lg transition-all shadow-sm hover:shadow-md"
             >
               Get in Touch
@@ -142,7 +142,7 @@ export default function Header() {
                   })}
                   <div className="px-6 py-3 pt-4 border-t border-gray-200">
                     <a
-                      href="tel:+23279279027"
+                      href="/#contact"
                       className="block w-full text-center text-sm font-semibold px-6 py-2.5 bg-accent-purple text-white rounded-lg hover:bg-accent-purple/90 transition-all"
                       onClick={() => setIsOpen(false)}
                     >

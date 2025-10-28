@@ -58,7 +58,7 @@ export default function Hero() {
               </Link>
               
               <Link
-                href="/contact"
+                href="/#contact"
                 className="inline-flex items-center justify-center border border-gray-300 text-gray-700 px-5 sm:px-6 py-3 sm:py-3.5 rounded-xl font-medium text-sm sm:text-base bg-white hover:border-accent-purple hover:text-accent-purple hover:bg-accent-purple/5 transition-all duration-200 shadow-sm hover:shadow-md"
               >
                 Get in Touch

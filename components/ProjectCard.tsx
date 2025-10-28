@@ -75,7 +75,7 @@ export default function ProjectCard({ project, onOpenGallery }: ProjectCardProps
               className="w-full h-full object-cover"
               muted
               loop
-              autoPlay
+              autoPlay={project.autoplay !== false}
               playsInline
             />
             <div className="absolute inset-0 flex items-center justify-center bg-black/20">
@@ -139,9 +139,11 @@ export default function ProjectCard({ project, onOpenGallery }: ProjectCardProps
                 className="flex items-center gap-1 sm:gap-1.5 px-2 sm:px-2.5 py-1 bg-white/80 backdrop-blur-sm border border-gray-200/50 rounded-lg hover:border-accent-purple/30 hover:bg-white transition-all group/tech"
               >
                 {tech.svgIcon ? (
-                  <img 
+                  <Image 
                     src={tech.svgIcon} 
                     alt={tech.name} 
+                    width={14}
+                    height={14}
                     className="w-3 h-3 sm:w-3.5 sm:h-3.5"
                   />
                 ) : (

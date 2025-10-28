@@ -74,7 +74,7 @@ export default function Portfolio() {
                 { id: 'Branding', label: 'Branding' },
                 { id: 'Graphic Design', label: 'Graphics' },
                 { id: 'Video Production', label: 'Videos' },
-                { id: 'Photography', label: 'Photos' },
+                { id: 'Digital Marketing Training', label: 'Training' },
                 { id: 'Web Design', label: 'Websites' },
               ].map((category) => (
                 <button

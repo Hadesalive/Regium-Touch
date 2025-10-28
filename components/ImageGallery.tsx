@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useCallback, useRef } from 'react'
+import { useState, useEffect, useCallback, useRef, useMemo } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
 import { X, ChevronLeft, ChevronRight, ExternalLink, ZoomIn, ZoomOut, FileText, Video as VideoIcon } from 'lucide-react'
@@ -21,11 +21,11 @@ export default function ImageGallery({ project, isOpen, onClose }: ImageGalleryP
   const thumbnailScrollRef = useRef<HTMLDivElement>(null)
   
   // Combine images, PDFs, and videos into one navigable array
-  const allContent = project ? [
+  const allContent = useMemo(() => project ? [
     ...(project.images || [project.thumbnail]),
     ...(project.pdfs || []),
     ...(project.video ? [project.video] : [])
-  ] : []
+  ] : [], [project])
   const hasMultiple = allContent.length > 1
   const pdfs = project?.pdfs || []
 
@@ -417,9 +417,11 @@ export default function ImageGallery({ project, isOpen, onClose }: ImageGalleryP
                                 className="group/tech flex items-center gap-1.5 px-3 py-2 bg-white/80 backdrop-blur-sm border border-gray-200/50 rounded-lg hover:border-accent-purple/30 hover:bg-white transition-all cursor-pointer"
                               >
                                 {tech.svgIcon ? (
-                                  <img 
+                                  <Image 
                                     src={tech.svgIcon} 
                                     alt={tech.name} 
+                                    width={16}
+                                    height={16}
                                     className="w-4 h-4 transition-transform group-hover/tech:scale-110"
                                     style={{
                                       filter: tech.name === 'Adobe Illustrator' ? 'brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%)' :
@@ -577,9 +579,11 @@ export default function ImageGallery({ project, isOpen, onClose }: ImageGalleryP
                               className="group/tech flex items-center gap-1.5 px-3 py-2 bg-white/80 backdrop-blur-sm border border-gray-200/50 rounded-lg hover:border-accent-purple/30 hover:bg-white transition-all"
                             >
                               {tech.svgIcon ? (
-                                <img 
+                                <Image 
                                   src={tech.svgIcon} 
                                   alt={tech.name} 
+                                  width={16}
+                                  height={16}
                                   className="w-4 h-4 transition-transform group-hover/tech:scale-110"
                                   style={{
                                     filter: tech.name === 'Adobe Illustrator' ? 'brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%)' :
